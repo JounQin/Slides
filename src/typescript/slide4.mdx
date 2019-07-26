@@ -1,0 +1,24 @@
+import fs from 'fs'
+import { PreCode } from '../components'
+
+<section>
+  <PreCode code={fs.readFileSync(__dirname + '/legacy2.ts')} language="typescript"></PreCode>
+</section>
+<section>
+  <div className="fragment fade-out" style={{ color: 'red' }}>
+    Why? Any difference????
+  </div>
+  <div className="fragment fade-in">
+    <span style={{ color: 'yellow' }}>My original understanding:</span>
+    <p className="fragment fade-in">Maybe <code>type</code> is more specific than <code>interface</code>.</p>
+    <p className="fragment fade-in">But than I find out it could be a bug</p>
+  </div>
+</section>
+<section style={{bottom:0, overflow:'auto'}}>
+  <div className="fragment fade-in">
+    <img src="https://i.stack.imgur.com/6Tjyp.png" alt="Difference" />
+  </div>
+</section>
+<section>
+  <a href="https://stackoverflow.com/questions/37233735/typescript-interfaces-vs-types" target="_blank">Reference</a>
+</section>

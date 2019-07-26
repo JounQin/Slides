@@ -8,34 +8,81 @@
   "private": true,
   "scripts": {
     "dev": "parcel src/index.html",
-    "lint": "eslint . --ext .ts --ext .tsx"
+    "lint": "eslint . --ext .ts --ext .tsx",
+    "build": "rimraf dist && parcel build src/index.html"
   },
   "dependencies": {
+    "@mdx-js/react": "^1.0.27",
+    "prism-react-renderer": "^0.1.7",
+    "prismjs": "^1.17.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "reveal.js": "^3.8.0"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^8.1.0",
+    "@mdx-js/parcel-plugin-mdx": "^1.1.0",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.5",
+    "commitlint": "^8.1.0",
     "eslint": "^6.1.0",
     "eslint-config-1stg": "^5.2.1",
-    "marked": "^0.7.0",
+    "husky": "^3.0.1",
+    "lint-staged": "^9.2.1",
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2",
     "prettier-config-1stg": "^0.1.0",
+    "sass": "^1.22.7",
     "typescript": "^3.5.3"
   },
   "eslintConfig": {
     "extends": "1stg/react",
     "rules": {
-      "@typescript-eslint/no-explicit-any": 0
-    }
+      "@typescript-eslint/no-explicit-any": 0,
+      "react/prop-types": 0
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.d.ts"
+        ],
+        "rules": {
+          "import/no-duplicates": 0,
+          "import/order": 0
+        }
+      }
+    ]
   },
   "eslintIgnore": [
     ".cache",
     "dist",
     "node_modules"
   ],
-  "prettier": "prettier-config-1stg"
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{html,json,md,mdx,scss,yml}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{ts,tsx}": [
+      "eslint",
+      "git add"
+    ]
+  },
+  "prettier": "prettier-config-1stg",
+  "renovate": {
+    "extends": [
+      "1stg"
+    ]
+  }
 }

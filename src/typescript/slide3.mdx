@@ -1,0 +1,16 @@
+import fs from 'fs'
+import { PreCode } from '../components'
+
+<PreCode
+  code={fs.readFileSync(__dirname + '/legacy1.ts')}
+  language="typescript"
+></PreCode>
+
+<div className="fragment fade-in">
+  <div className="fragment fade-out" style={{ color: 'red' }}>
+    Really?
+  </div>
+  <div className="fragment fade-in" style={{ color: 'yellow' }}>
+    So maybe a bug of displaying
+  </div>
+</div>
