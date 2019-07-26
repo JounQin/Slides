@@ -1,3 +1,5 @@
+import { EnumType } from './typeof'
+
 export interface It {
   a: string
   b: string
@@ -13,3 +15,5 @@ export type KeyString = keyof string
 export type KeyObject = keyof Object
 
 export type KeyRecord = keyof Record<KeyString, KeyObject> // KeyString
+
+export type KeyEnum = keyof EnumType // 'X' | 'Y' | 'Z'

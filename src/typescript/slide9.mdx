@@ -1,0 +1,12 @@
+import fs from 'fs'
+import { PreCode, SectionTitle } from '../components'
+
+<section>
+  <SectionTitle>Type Guard</SectionTitle>
+</section>
+<section>
+  <PreCode code={fs.readFileSync(__dirname + '/type-guard.ts')} language="typescript"></PreCode>
+  <div className="fragment fade-in">
+    Notice: The type guard does not affect the runtime behavior!
+  </div>
+</section>

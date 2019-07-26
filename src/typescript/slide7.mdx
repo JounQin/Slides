@@ -8,3 +8,22 @@ import { PreCode, SectionTitle } from '../components'
 <section>
   <PreCode code={fs.readFileSync(__dirname + '/keyof.ts')} language="typescript"></PreCode>
 </section>
+<section>
+  <div>Is there a <code>valueof</code> keyword?</div>
+  <div className="fragment fade-in">
+    Not yet and no need, It's pretty simple.
+    <div className="fragment fade-in">
+      <PreCode code={fs.readFileSync(__dirname + '/valueof.ts')} language="typescript"></PreCode>
+    </div>
+  </div>
+</section>
+<section>
+  <div>
+    <code>keyof</code>
+    <code>+</code>
+    <code>in</code>
+  </div>
+  <div className="fragment fade-in">
+    <PreCode code={fs.readFileSync(__dirname + '/in.ts')} language="typescript"></PreCode>
+  </div>
+</section>

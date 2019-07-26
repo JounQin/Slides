@@ -1,5 +1,5 @@
 import fs from 'fs'
-import { PreCode } from '../components'
+import { ExternalLink, PreCode } from '../components'
 
 <section>
   <PreCode code={fs.readFileSync(__dirname + '/legacy2.ts')} language="typescript"></PreCode>
@@ -20,5 +20,5 @@ import { PreCode } from '../components'
   </div>
 </section>
 <section>
-  <a href="https://stackoverflow.com/questions/37233735/typescript-interfaces-vs-types" target="_blank">Reference</a>
+  <ExternalLink href="https://stackoverflow.com/questions/37233735/typescript-interfaces-vs-types">Reference</ExternalLink>
 </section>

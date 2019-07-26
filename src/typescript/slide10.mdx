@@ -1,0 +1,16 @@
+import fs from 'fs'
+import { PreCode, SectionTitle, SubTitle } from '../components'
+
+<section>
+  <SectionTitle>infer</SectionTitle>
+  <SubTitle level={5}>My favorite feature</SubTitle>
+</section>
+<section>
+  <PreCode code={fs.readFileSync(__dirname + '/return-type.ts')} language="typescript"></PreCode>
+</section>
+<section>
+  How?
+  <div className="fragment fade-in">
+    <PreCode code={fs.readFileSync(__dirname + '/infer.ts')} language="typescript"></PreCode>
+  </div>
+</section>

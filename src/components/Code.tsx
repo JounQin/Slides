@@ -1,5 +1,6 @@
 import Highlight, { defaultProps, Language } from 'prism-react-renderer'
 
+import cn from 'classnames'
 import React from 'react'
 
 export const Code: React.FunctionComponent<{
@@ -31,8 +32,11 @@ export const Code: React.FunctionComponent<{
 export const PreCode: React.FunctionComponent<{
   code: string
   language: string
-}> = ({ code, language }) => (
+  className?: string
+}> = ({ code, language, className }) => (
   <pre>
-    <Code className={'language-' + language}>{code.toString()}</Code>
+    <Code className={cn('language-' + language, className)}>
+      {code.toString()}
+    </Code>
   </pre>
 )
