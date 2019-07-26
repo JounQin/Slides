@@ -1,0 +1,10 @@
+import fs from 'fs'
+import { PreCode, SectionTitle } from '../components'
+
+<section>
+  <SectionTitle level="4">keyof</SectionTitle>
+  <div className="fragment fade-in">get keys type from type</div>
+</section>
+<section>
+  <PreCode code={fs.readFileSync(__dirname + '/keyof.ts')} language="typescript"></PreCode>
+</section>

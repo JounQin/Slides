@@ -1,25 +1,14 @@
-export type K = keyof any
-export type T = { [key in K]: string }
-
-export type KT = keyof T
-
-const t: T = {
-  [Symbol('t')]: 't',
-}
-
-console.log(t)
-
 export function test(params: { [key: string]: string }) {
   console.log(params)
 }
 
-interface PI {
+export interface PI {
   a: string
   b: string
 }
 
 // eslint-disable-next-line @typescript-eslint/prefer-interface
-type PT = {
+export type PT = {
   a: string
   b: string
 }
@@ -34,5 +23,30 @@ const n: PT = {
   b: '2',
 }
 
+// @ts-ignore
 test(m)
 test(n)
+
+export interface PI2 extends PT {
+  c: number
+}
+
+const p: PI2 = {
+  a: '1',
+  b: '2',
+  c: 3,
+}
+
+type PT2 = PT & {
+  c: number
+}
+
+const q: PT2 = {
+  a: '1',
+  b: '2',
+  c: 3,
+}
+
+// @ts-ignore
+test(p)
+test(q)
