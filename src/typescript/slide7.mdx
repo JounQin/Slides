@@ -5,18 +5,29 @@ import { PreCode, SectionTitle } from '../components'
   <SectionTitle level="4">keyof</SectionTitle>
   <div className="fragment fade-in">get keys type from type</div>
 </section>
+
 <section>
-  <PreCode code={fs.readFileSync(__dirname + '/keyof.ts')} language="typescript"></PreCode>
+  <PreCode
+    code={fs.readFileSync(__dirname + '/keyof.ts')}
+    language="typescript"
+  ></PreCode>
 </section>
+
 <section>
-  <div>Is there a <code>valueof</code> keyword?</div>
+  <div>
+    Is there a <code>valueof</code> keyword?
+  </div>
   <div className="fragment fade-in">
     Not yet and no need, It's pretty simple.
     <div className="fragment fade-in">
-      <PreCode code={fs.readFileSync(__dirname + '/valueof.ts')} language="typescript"></PreCode>
+      <PreCode
+        code={fs.readFileSync(__dirname + '/valueof.ts')}
+        language="typescript"
+      ></PreCode>
     </div>
   </div>
 </section>
+
 <section>
   <div>
     <code>keyof</code>
@@ -24,6 +35,9 @@ import { PreCode, SectionTitle } from '../components'
     <code>in</code>
   </div>
   <div className="fragment fade-in">
-    <PreCode code={fs.readFileSync(__dirname + '/in.ts')} language="typescript"></PreCode>
+    <PreCode
+      code={fs.readFileSync(__dirname + '/in.ts')}
+      language="typescript"
+    ></PreCode>
   </div>
 </section>
