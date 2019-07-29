@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "dev": "parcel src/index.html",
-    "lint": "eslint . --ext .ts --ext .tsx",
+    "lint": "eslint . --ext mdx,ts,tsx",
     "build": "rimraf dist && parcel build src/index.html"
   },
   "dependencies": {
@@ -24,6 +24,7 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^8.1.0",
     "@mdx-js/parcel-plugin-mdx": "^1.1.0",
+    "@rxts/eslint-plugin-mdx": "^0.1.1",
     "@types/classnames": "^2.2.9",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.5",
@@ -39,7 +40,9 @@
     "typescript": "^3.5.3"
   },
   "eslintConfig": {
-    "extends": "1stg/react",
+    "extends": [
+      "1stg/react"
+    ],
     "rules": {
       "@typescript-eslint/no-explicit-any": 0,
       "react/prop-types": 0
@@ -53,6 +56,14 @@
           "import/no-duplicates": 0,
           "import/order": 0
         }
+      },
+      {
+        "files": [
+          "*.mdx"
+        ],
+        "extends": [
+          "plugin:@rxts/mdx/recommended"
+        ]
       }
     ]
   },
