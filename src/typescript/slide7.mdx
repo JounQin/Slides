@@ -1,4 +1,5 @@
 import fs from 'fs'
+
 import { PreCode, SectionTitle } from '../components'
 
 <section>
@@ -18,7 +19,7 @@ import { PreCode, SectionTitle } from '../components'
     Is there a <code>valueof</code> keyword?
   </div>
   <div className="fragment fade-in">
-    Not yet and no need, It's pretty simple.
+    Not yet and no need, It&apos;s pretty simple.
     <div className="fragment fade-in">
       <PreCode
         code={fs.readFileSync(__dirname + '/valueof.ts')}
