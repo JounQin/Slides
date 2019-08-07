@@ -7,8 +7,7 @@ export interface PI {
   b: string
 }
 
-// eslint-disable-next-line @typescript-eslint/prefer-interface
-export type PT = {
+export interface PT {
   a: string
   b: string
 }
@@ -25,6 +24,7 @@ const n: PT = {
 
 // @ts-ignore
 test(m)
+// @ts-ignore
 test(n)
 
 export interface PI2 extends PT {
@@ -49,4 +49,5 @@ const q: PT2 = {
 
 // @ts-ignore
 test(p)
+// @ts-ignore
 test(q)

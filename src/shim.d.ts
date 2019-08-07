@@ -6,7 +6,14 @@ declare module '*.mdx' {
 
 declare module '@mdx-js/react' {
   import { ComponentType } from 'react'
-  export const MDXProvider: ComponentType<{ components: any }>
+  export const MDXProvider: ComponentType<{
+    components: Record<
+      string,
+      ComponentType<{
+        className?: string
+      }>
+    >
+  }>
 }
 
 declare module 'reveal.js' {

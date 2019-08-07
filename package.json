@@ -8,11 +8,11 @@
   "private": true,
   "scripts": {
     "dev": "parcel src/index.html",
-    "lint": "eslint . --ext mdx,ts,tsx",
+    "lint": "EFF_NO_LINK_RULES=true eslint . --ext mdx,ts,tsx -f friendly",
     "build": "rimraf dist && parcel build src/index.html"
   },
   "dependencies": {
-    "@mdx-js/react": "^1.1.5",
+    "@mdx-js/react": "^1.1.6",
     "classnames": "^2.2.6",
     "prism-react-renderer": "^0.1.7",
     "prismjs": "^1.17.1",
@@ -23,14 +23,15 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^8.1.0",
-    "@mdx-js/parcel-plugin-mdx": "^1.1.5",
+    "@mdx-js/parcel-plugin-mdx": "^1.1.6",
     "@rxts/eslint-plugin-mdx": "^0.9.5",
     "@types/classnames": "^2.2.9",
     "@types/react": "^16.8.24",
     "@types/react-dom": "^16.8.5",
     "commitlint": "^8.1.0",
     "eslint": "^6.1.0",
-    "eslint-config-1stg": "^5.2.1",
+    "eslint-config-1stg": "^5.6.9",
+    "eslint-formatter-friendly": "^7.0.0",
     "husky": "^3.0.2",
     "lint-staged": "^9.2.1",
     "parcel-bundler": "^1.12.3",
@@ -38,38 +39,6 @@
     "prettier-config-1stg": "^0.1.0",
     "sass": "^1.22.9",
     "typescript": "^3.5.3"
-  },
-  "eslintConfig": {
-    "extends": [
-      "1stg/react",
-      "plugin:@rxts/mdx/recommended"
-    ],
-    "rules": {
-      "@typescript-eslint/no-explicit-any": 0,
-      "react/prop-types": 0
-    },
-    "overrides": [
-      {
-        "files": [
-          "*.d.ts"
-        ],
-        "rules": {
-          "import/no-duplicates": 0,
-          "import/order": 0
-        }
-      },
-      {
-        "files": [
-          "*.mdx"
-        ],
-        "extends": [
-          "plugin:@rxts/mdx/overrides"
-        ],
-        "rules": {
-          "no-path-concat": 0
-        }
-      }
-    ]
   },
   "eslintIgnore": [
     ".cache",
@@ -88,11 +57,11 @@
     }
   },
   "lint-staged": {
-    "*.{html,json,md,mdx,scss,yml}": [
+    "*.{html,json,md,scss,yml}": [
       "prettier --write",
       "git add"
     ],
-    "*.{ts,tsx}": [
+    "*.{mdx,ts,tsx}": [
       "eslint",
       "git add"
     ]

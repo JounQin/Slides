@@ -4,13 +4,12 @@ import cn from 'classnames'
 import React from 'react'
 
 export const Code: React.FunctionComponent<{
-  children: string
-  className: string
+  className?: string
 }> = ({ children, className }) =>
   className ? (
     <Highlight
       {...defaultProps}
-      code={children}
+      code={children as string}
       language={className.replace(/language-/, '') as Language}
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
