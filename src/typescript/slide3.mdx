@@ -2,10 +2,7 @@ import fs from 'fs'
 
 import { PreCode } from '../components'
 
-<PreCode
-  code={fs.readFileSync(__dirname + '/legacy1.ts')}
-  language="typescript"
-></PreCode>
+<PreCode code={fs.readFileSync(__dirname + '/legacy1.ts')}></PreCode>
 
 <div className="fragment fade-in">
   <div className="fragment fade-out error">Really?</div>

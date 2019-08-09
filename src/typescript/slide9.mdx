@@ -7,10 +7,7 @@ import { PreCode, SectionTitle } from '../components'
 </section>
 
 <section>
-  <PreCode
-    code={fs.readFileSync(__dirname + '/type-guard.ts')}
-    language="typescript"
-  ></PreCode>
+  <PreCode code={fs.readFileSync(__dirname + '/type-guard.ts')}></PreCode>
   <div className="fragment fade-in">
     Notice: The type guard does not affect the{' '}
     <span className="warn">runtime</span> behavior!

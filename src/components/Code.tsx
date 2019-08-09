@@ -31,13 +31,13 @@ export const Code: React.FunctionComponent<{
   )
 
 export const PreCode: React.FunctionComponent<{
-  code: string
+  code: Uint8Array
   language: string
   className?: string
-}> = ({ code, language, className }) => (
+}> = ({ code, language = 'ts', className }) => (
   <pre>
     <Code className={cn('language-' + language, className)}>
-      {code.toString()}
+      {String(code)}
     </Code>
   </pre>
 )

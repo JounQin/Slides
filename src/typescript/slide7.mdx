@@ -8,10 +8,7 @@ import { PreCode, SectionTitle } from '../components'
 </section>
 
 <section>
-  <PreCode
-    code={fs.readFileSync(__dirname + '/keyof.ts')}
-    language="typescript"
-  ></PreCode>
+  <PreCode code={fs.readFileSync(__dirname + '/keyof.ts')}></PreCode>
 </section>
 
 <section>
@@ -19,10 +16,7 @@ import { PreCode, SectionTitle } from '../components'
   <div className="fragment fade-in">
     Not yet and no need, It&apos;s pretty simple.
     <div className="fragment fade-in">
-      <PreCode
-        code={fs.readFileSync(__dirname + '/valueof.ts')}
-        language="typescript"
-      ></PreCode>
+      <PreCode code={fs.readFileSync(__dirname + '/valueof.ts')}></PreCode>
     </div>
   </div>
 </section>
@@ -30,9 +24,6 @@ import { PreCode, SectionTitle } from '../components'
 <section>
   <code>keyof+in</code>
   <div className="fragment fade-in">
-    <PreCode
-      code={fs.readFileSync(__dirname + '/in.ts')}
-      language="typescript"
-    ></PreCode>
+    <PreCode code={fs.readFileSync(__dirname + '/in.ts')}></PreCode>
   </div>
 </section>

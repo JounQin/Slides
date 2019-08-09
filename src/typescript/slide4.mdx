@@ -3,10 +3,7 @@ import fs from 'fs'
 import { ExternalLink, PreCode } from '../components'
 
 <section>
-  <PreCode
-    code={fs.readFileSync(__dirname + '/legacy2.ts')}
-    language="typescript"
-  ></PreCode>
+  <PreCode code={fs.readFileSync(__dirname + '/legacy2.ts')}></PreCode>
 </section>
 
 <section>
