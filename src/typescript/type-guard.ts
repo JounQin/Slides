@@ -35,16 +35,16 @@ export interface I2 {
 
 export function test3(param: I1 | I2) {
   if ('a' in param) {
-    // must have prop 'a'
+    // must have prop 'a', type I1
     return param.a
   }
 
   if ('c' in param) {
     // @ts-ignore
-    return param.c // error, should never happen, but many people want it will work in the future
+    return param.c // error, type never, should never happen, but many people want it will work in the future
   }
 
-  // must have prop 'a'
+  // must have prop 'b', type I2
   return param.b
 }
 
@@ -69,7 +69,15 @@ export function isPromise<T>(source: any): source is Promise<T> {
 
 export function test5(param: unknown) {
   if (isPromise<number>(param)) {
-    // must be an instance of promise
+    // must be an instance of Promise
     return param.then(num => num * num)
   }
 }
+
+let x:
+  | {
+      m: string
+    }
+  | undefined
+
+export const y = x!.m // if strictNullChecks is enabled, without `!` it will emit a build-time error

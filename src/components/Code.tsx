@@ -3,14 +3,16 @@ import Highlight, { defaultProps, Language } from 'prism-react-renderer'
 import cn from 'classnames'
 import React from 'react'
 
+const LANGUAGE_REGEXP = /language-(?=[a-z]+)/
+
 export const Code: React.FunctionComponent<{
   className?: string
 }> = ({ children, className }) =>
-  className ? (
+  LANGUAGE_REGEXP.test(className!) ? (
     <Highlight
       {...defaultProps}
       code={children as string}
-      language={className.replace(/language-/, '') as Language}
+      language={className!.replace(LANGUAGE_REGEXP, '') as Language}
     >
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <code className={className} style={style}>
@@ -25,7 +27,7 @@ export const Code: React.FunctionComponent<{
       )}
     </Highlight>
   ) : (
-    <>{children}</>
+    <code className={className}>{children}</code>
   )
 
 export const PreCode: React.FunctionComponent<{

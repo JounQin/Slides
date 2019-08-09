@@ -10,11 +10,9 @@ import { ExternalLink, PreCode } from '../components'
 </section>
 
 <section>
-  <div className="fragment fade-out" style={{ color: 'red' }}>
-    Why? Any difference????
-  </div>
+  <div className="fragment fade-out error">Why? Any difference????</div>
   <div className="fragment fade-in">
-    <span style={{ color: 'yellow' }}>My original understanding:</span>
+    <span className="warn">My original understanding:</span>
     <p className="fragment fade-in">
       Maybe <code>type</code> is more specific than <code>interface</code>.
     </p>
@@ -22,18 +20,15 @@ import { ExternalLink, PreCode } from '../components'
   </div>
 </section>
 
-<section style={{ bottom: 0, overflow: 'auto' }}>
-  <div className="fragment fade-in">
-    <img src="https://i.stack.imgur.com/6Tjyp.png" alt="Difference" />
-  </div>
-</section>
-
 <section>
-  <ExternalLink href="https://stackoverflow.com/questions/37233735/typescript-interfaces-vs-types">
-    Reference
-  </ExternalLink>
   <ExternalLink href="https://github.com/microsoft/TypeScript/issues/15300">
     Related Issue
   </ExternalLink>
-  <p className="fragment fade-in">It seems fixed after `3.6.0-dev.20190806`</p>
+  <p className="fragment fade-in">
+    It seems more consistent after
+    <br /> <code>3.6.0-dev.20190806</code>,
+  </p>
+  <p className="fragment fade-in">
+    although I don&apos;t know which commit actually affect.
+  </p>
 </section>

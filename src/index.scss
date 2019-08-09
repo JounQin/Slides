@@ -1,7 +1,23 @@
+@import 'prismjs/themes/prism-dark.css';
+@import 'reveal.js/css/reveal.css';
+@import 'reveal.js/css/theme/black.css';
+
 .reveal {
   @for $i from 1 through 6 {
     h#{$i} {
       text-transform: none;
     }
   }
+}
+
+.error {
+  color: red;
+}
+
+.warn {
+  color: yellow;
+}
+
+code {
+  color: gray;
 }

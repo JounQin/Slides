@@ -9,5 +9,5 @@ export interface I2 {
 }
 
 export type KeyIn = {
-  [key in keyof I1 | keyof I2]: key
+  [key in keyof I1 | keyof I2 | keyof []]: key
 }

@@ -8,11 +8,6 @@ import mdx from './typescript/slide*.mdx'
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import 'prismjs/themes/prism-dark.css'
-import 'reveal.js/css/reveal.css'
-import 'reveal.js/css/theme/black.css'
-import './index.scss'
-
 ReactDOM.render(
   <MDXProvider
     components={{
