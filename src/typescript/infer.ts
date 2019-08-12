@@ -6,6 +6,15 @@ export type ReturnType<T extends Function> = T extends (
   ? R
   : never
 
+export type FirstArg<T extends Function> = T extends () => any
+  ? never
+  : T extends (first: infer R, ...args: any[]) => any
+  ? R
+  : never
+
+export type Arg1 = FirstArg<() => void>
+export type Arg2 = FirstArg<(param: string | number) => symbol>
+
 export type ObservableType<T extends Observable<any>> = T extends Observable<
   infer R
 >
