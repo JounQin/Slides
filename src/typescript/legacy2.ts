@@ -7,7 +7,8 @@ export interface PI {
   b: string
 }
 
-export interface PT {
+// eslint-disable-next-line
+export type PT = {
   a: string
   b: string
 }
@@ -24,7 +25,6 @@ const n: PT = {
 
 // @ts-ignore
 test(m)
-// @ts-ignore
 test(n)
 
 export interface PI2 extends PT {
@@ -49,5 +49,4 @@ const q: PT2 = {
 
 // @ts-ignore
 test(p)
-// @ts-ignore
 test(q)
