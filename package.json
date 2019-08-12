@@ -36,7 +36,7 @@
     "lint-staged": "^9.2.1",
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2",
-    "prettier-config-1stg": "^0.1.0",
+    "prettier-config-1stg": "^0.2.0",
     "sass": "^1.22.9",
     "tsd": "^0.7.4",
     "typescript": "^3.5.3"
