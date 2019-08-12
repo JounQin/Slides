@@ -987,15 +987,12 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
-"@rxts/eslint-plugin-mdx@^0.9.7":
-  version "0.9.7"
-  resolved "https://registry.yarnpkg.com/@rxts/eslint-plugin-mdx/-/eslint-plugin-mdx-0.9.7.tgz#5c988728f694992c0476afd9f0748bdd41c10942"
-  integrity sha512-GOnjzNjXXsxlH6Wy7y7FNUFG3KAttYVVBnYmBSboid6afSBb3/bIe+zlQMTR9pjdTl6tKDD02Fn4L2bEDxEnaQ==
+"@rxts/eslint-plugin-mdx@^0.9.11":
+  version "0.9.11"
+  resolved "https://registry.yarnpkg.com/@rxts/eslint-plugin-mdx/-/eslint-plugin-mdx-0.9.11.tgz#1b8507533e4eb2b8baed508ffda43e320eb66feb"
+  integrity sha512-qlWFmDGOtw5rmntfjtvF/2JE3LPNECgS8tkrdu1MMc8HgDHlfCYceBhMxGNCjYo/eYJBk/3ZkZAZJjvvY1AA3A==
   dependencies:
-    eslint-mdx "^0.9.7"
-    remark-mdx "^1.1.5"
-    remark-parse "^7.0.0"
-    unified "^8.3.2"
+    eslint-mdx "^0.9.11"
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
@@ -2987,10 +2984,13 @@ eslint-import-resolver-typescript@JounQin/eslint-import-resolver-typescript#feat
     resolve "^1.4.0"
     tsconfig-paths "^3.6.0"
 
-eslint-mdx@^0.9.7:
-  version "0.9.7"
-  resolved "https://registry.yarnpkg.com/eslint-mdx/-/eslint-mdx-0.9.7.tgz#cc82cdfd00c732cd9774777860a0fbe3e2b39eee"
-  integrity sha512-0akc6epqxYRDolHe6CJa/yemVdSGNDI1vrQ6ILXzzEKSCB4JqxZ6U3nNp9X9SXCYW2c/uIFDFgRxBY4gZp3jPQ==
+eslint-mdx@^0.9.11:
+  version "0.9.11"
+  resolved "https://registry.yarnpkg.com/eslint-mdx/-/eslint-mdx-0.9.11.tgz#0518541e8f629aeb56d9d7ebe2f2aaac7dbc0f3d"
+  integrity sha512-m1n81tQyPu1L/SIXvo0qn2CHRCbI83J9+d3VVjNgfYSITuB3TsPAB6IoSv9Azpn/pSUr0ZTr77rvuBFxk4J3vg==
+  dependencies:
+    remark-mdx "^1.2.2"
+    remark-parse "^7.0.1"
 
 eslint-module-utils@^2.4.0:
   version "2.4.1"
@@ -6789,7 +6789,7 @@ regjsparser@^0.6.0:
   dependencies:
     jsesc "~0.5.0"
 
-remark-mdx@^1.1.5, remark-mdx@^1.2.2:
+remark-mdx@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/remark-mdx/-/remark-mdx-1.2.2.tgz#2e7efc76405999f7d3937b9011c2310326cfc74f"
   integrity sha512-jkDKV2FMmIzRftMFL6YDKijr12JxsgXWgG8Slb/IKV58F6846W8WuJRonQDCOQ5QL2+1GChB7hZ4QbnNvn4ktg==
@@ -6803,7 +6803,7 @@ remark-mdx@^1.1.5, remark-mdx@^1.2.2:
     remark-parse "7.0.1"
     unified "8.3.2"
 
-remark-parse@7.0.1, remark-parse@^7.0.0:
+remark-parse@7.0.1, remark-parse@^7.0.1:
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-7.0.1.tgz#0c13d67e0d7b82c2ad2d8b6604ec5fae6c333c2b"
   integrity sha512-WOZLa545jYXtSy+txza6ACudKWByQac4S2DmGk+tAGO/3XnVTOxwyCIxB7nTcLlk8Aayhcuf3cV1WV6U6L7/DQ==
@@ -7954,7 +7954,7 @@ unicode-trie@^0.3.1:
     pako "^0.2.5"
     tiny-inflate "^1.0.0"
 
-unified@8.3.2, unified@^8.3.2:
+unified@8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/unified/-/unified-8.3.2.tgz#aed69d0e577d6ef27268431c63a10faef60e63ab"
   integrity sha512-NDtUAXcd4c+mKppCbsZHzmhkKEQuhveZNBrFYmNgMIMk2K9bc8hmG3mLEGVtRmSNodobwyMePAnvIGVWZfPdzQ==
