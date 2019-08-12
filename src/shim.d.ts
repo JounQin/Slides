@@ -7,12 +7,7 @@ declare module '*.mdx' {
 declare module '@mdx-js/react' {
   import React from 'react'
   export const MDXProvider: React.ComponentType<{
-    components: Record<
-      string,
-      React.ComponentType<{
-        className?: string
-      }>
-    >
+    components: Record<string, React.ComponentType<any>>
   }>
 }
 

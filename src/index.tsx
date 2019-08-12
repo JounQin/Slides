@@ -2,7 +2,7 @@ import Reveal from 'reveal.js'
 import { MDXProvider } from '@mdx-js/react'
 import whyDidYouRender from '@welldone-software/why-did-you-render'
 
-import { Code } from './components'
+import * as components from './components'
 // eslint-disable-next-line import/no-unresolved
 import mdx from './typescript/slide*.mdx'
 
@@ -16,11 +16,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 ReactDOM.render(
-  <MDXProvider
-    components={{
-      code: Code,
-    }}
-  >
+  <MDXProvider components={components}>
     <div className="slides">
       {Object.entries(mdx).map(
         ([key, MDX]: [string, { default: React.ComponentType }]) => (

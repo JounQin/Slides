@@ -1,6 +1,6 @@
 language: node_js
 
-node_js: stable
+node_js: --lts
 
 cache: yarn
 
@@ -17,7 +17,6 @@ before_script:
   - export TRAVIS_REPO_NAME=${TRAVIS_REPO_SLUG#*/}
 
 script:
-  - set -e
   - yarn lint
   - yarn build --public-url /$TRAVIS_REPO_NAME/
 

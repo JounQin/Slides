@@ -2,10 +2,10 @@ checks:
   - name: build-size-watcher
     options:
       files:
-        - path: 'dist/**/*.*'
+        - path: dist/**/*.*
   - name: commit-deployment
     options:
-      buildPath: './dist'
+      buildPath: ./dist
   - name: type-coverage-watcher
     options:
       ignoreCatch: true
