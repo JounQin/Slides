@@ -10,7 +10,7 @@
     "dev": "parcel src/index.html",
     "lint": "EFF_NO_LINK_RULES=true eslint . --ext mdx,ts,tsx -f friendly",
     "build": "rimraf dist && parcel build src/index.html",
-    "type-coverage": "type-coverage --cache --ignore-catch --detail --ignore-files dist --strict"
+    "type-coverage": "type-coverage --cache --ignore-catch --detail --ignore-files dist --ignore-files *.d.ts --strict"
   },
   "dependencies": {
     "@mdx-js/react": "^1.2.2",
@@ -40,6 +40,7 @@
     "prettier": "^1.18.2",
     "prettier-config-1stg": "^0.2.0",
     "sass": "^1.22.9",
+    "ts-node": "^8.3.0",
     "tsd": "^0.7.4",
     "type-coverage": "^2.2.0",
     "typescript": "^3.5.3"
