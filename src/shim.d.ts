@@ -1,15 +1,15 @@
 declare module '*.mdx' {
-  import { ComponentType } from 'react'
-  const content: ComponentType
+  import React from 'react'
+  const content: React.ComponentType
   export default content
 }
 
 declare module '@mdx-js/react' {
-  import { ComponentType } from 'react'
-  export const MDXProvider: ComponentType<{
+  import React from 'react'
+  export const MDXProvider: React.ComponentType<{
     components: Record<
       string,
-      ComponentType<{
+      React.ComponentType<{
         className?: string
       }>
     >

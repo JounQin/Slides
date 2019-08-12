@@ -10,6 +10,8 @@ before_install:
   - git config --global user.name 'JounQin'
   - git config --global user.email 'admin@1stg.me'
 
+install: yarn --frozen-lockfile
+
 before_script:
   - export TRAVIS_REPO_OWNER=${TRAVIS_REPO_SLUG%/*}
   - export TRAVIS_REPO_NAME=${TRAVIS_REPO_SLUG#*/}
@@ -30,3 +32,7 @@ deploy:
   local_dir: dist
   on:
     branch: master
+
+after_script:
+  - yarn add -D @codechecks/client @codechecks/build-size-watcher @codechecks/commit-deployment @codechecks/type-coverage-watcher -W
+  - yarn codechecks

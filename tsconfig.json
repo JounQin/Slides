@@ -1,5 +1,5 @@
 {
-  "extends": "eslint-config-1stg",
+  "extends": "./node_modules/tsconfig-1stg/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
     "jsx": "react",

@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "lint": "EFF_NO_LINK_RULES=true eslint . --ext mdx,ts,tsx -f friendly",
-    "build": "rimraf dist && parcel build src/index.html"
+    "build": "rimraf dist && parcel build src/index.html",
+    "type-coverage": "type-coverage --cache --ignore-catch --detail --ignore-files dist --strict"
   },
   "dependencies": {
     "@mdx-js/react": "^1.2.2",
@@ -24,21 +25,23 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^8.1.0",
     "@mdx-js/parcel-plugin-mdx": "^1.2.2",
-    "@rxts/eslint-plugin-mdx": "^0.9.7",
+    "@rxts/eslint-plugin-mdx": "^0.11.1",
     "@types/classnames": "^2.2.9",
-    "@types/react": "^16.9.0",
+    "@types/react": "^16.9.1",
     "@types/react-dom": "^16.8.5",
+    "@welldone-software/why-did-you-render": "^3.3.2",
     "commitlint": "^8.1.0",
     "eslint": "^6.1.0",
-    "eslint-config-1stg": "^5.6.9",
+    "eslint-config-1stg": "^5.7.0",
     "eslint-formatter-friendly": "^7.0.0",
     "husky": "^3.0.3",
     "lint-staged": "^9.2.1",
     "parcel-bundler": "^1.12.3",
     "prettier": "^1.18.2",
-    "prettier-config-1stg": "^0.1.0",
+    "prettier-config-1stg": "^0.2.0",
     "sass": "^1.22.9",
     "tsd": "^0.7.4",
+    "type-coverage": "^2.2.0",
     "typescript": "^3.5.3"
   },
   "eslintIgnore": [
@@ -72,5 +75,8 @@
     "extends": [
       "1stg"
     ]
+  },
+  "typeCoverage": {
+    "atLeast": 98
   }
 }
