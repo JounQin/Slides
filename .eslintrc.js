@@ -3,6 +3,9 @@ const { register } = require('ts-node')
 
 register({
   transpileOnly: true,
+  compilerOptions: {
+    module: 'commonjs',
+  },
 })
 
 const components = require('./src/components')
