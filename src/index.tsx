@@ -15,6 +15,8 @@ if (process.env.NODE_ENV === 'development') {
   })
 }
 
+const { GitHubBadge } = components
+
 ReactDOM.render(
   <MDXProvider components={components}>
     <div className="slides">
@@ -26,6 +28,7 @@ ReactDOM.render(
         ),
       )}
     </div>
+    <GitHubBadge slug="JounQin/Slides" fill="white" />
   </MDXProvider>,
   document.querySelector('.reveal'),
 )

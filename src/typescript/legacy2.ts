@@ -7,7 +7,7 @@ export interface PI {
   b: string
 }
 
-// eslint-disable-next-line
+// eslint-disable-next-line @typescript-eslint/consistent-type-definitions
 export type PT = {
   a: string
   b: string

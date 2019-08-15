@@ -1,8 +1,15 @@
 import React from 'react'
 
-export const ExternalLink: React.FunctionComponent<
-  React.AnchorHTMLAttributes<HTMLAnchorElement>
-> = ({ children, href, ...props }) => (
+export type ExternalLinkProps = Omit<
+  React.AnchorHTMLAttributes<HTMLAnchorElement>,
+  'target' | 'rel'
+>
+
+export const ExternalLink: React.FunctionComponent<ExternalLinkProps> = ({
+  children,
+  href,
+  ...props
+}) => (
   <a
     {...props}
     href={href || undefined}
