@@ -30,7 +30,7 @@
     "@types/react-dom": "^16.8.5",
     "@welldone-software/why-did-you-render": "^3.3.3",
     "commitlint": "^8.1.0",
-    "eslint": "^6.1.0",
+    "eslint": "^6.2.0",
     "eslint-config-1stg": "^5.8.2-beta.1",
     "eslint-formatter-friendly": "^7.0.0",
     "eslint-plugin-mdx": "^1.0.2-beta.2",
