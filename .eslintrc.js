@@ -1,4 +1,3 @@
-const { overrides } = require('eslint-config-1stg/overrides')
 const { register } = require('ts-node')
 
 register({
@@ -12,9 +11,8 @@ const components = require('./src/components')
 
 module.exports = {
   root: true,
-  extends: '1stg',
+  extends: '@1stg',
   overrides: [
-    ...overrides,
     {
       files: '*.mdx',
       globals: Object.keys(components).reduce(
@@ -31,7 +29,6 @@ module.exports = {
     {
       files: '*.{ts,tsx}',
       rules: {
-        '@typescript-eslint/ban-ts-ignore': 0,
         '@typescript-eslint/no-explicit-any': 0,
         '@typescript-eslint/no-type-alias': 0,
       },

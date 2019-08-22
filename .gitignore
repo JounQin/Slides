@@ -1,4 +1,4 @@
-.cache
+.*cache
 .type-coverage
 dist
 node_modules

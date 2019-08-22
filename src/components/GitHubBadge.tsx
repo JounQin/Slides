@@ -1,6 +1,7 @@
-import { ExternalLink } from './ExternalLink'
-
+/* eslint-disable @typescript-eslint/no-magic-numbers */
 import React from 'react'
+
+import { ExternalLink } from './ExternalLink'
 
 const style = {
   position: 'fixed',

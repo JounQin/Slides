@@ -1,6 +1,5 @@
-import Highlight, { defaultProps, Language } from 'prism-react-renderer'
-
 import cn from 'classnames'
+import Highlight, { defaultProps, Language } from 'prism-react-renderer'
 import React from 'react'
 
 const LANGUAGE_REGEXP = /language-(?=[a-z]+)/

@@ -49,9 +49,9 @@ export type J2<T> = [T] extends [never]
 export type P2 = J2<never> // finally works
 
 // magic
-export type IfEqual<A, B = A, If = A, Else = B> = ((p: A) => B) extends ((
+export type IfEqual<A, B = A, If = A, Else = B> = ((p: A) => B) extends (
   p: B,
-) => A)
+) => A
   ? If
   : Else
 

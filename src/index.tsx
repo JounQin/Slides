@@ -1,13 +1,12 @@
 import Reveal from 'reveal.js'
 import { MDXProvider } from '@mdx-js/react'
 import whyDidYouRender from '@welldone-software/why-did-you-render'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
 import * as components from './components'
 // eslint-disable-next-line import/no-unresolved
 import mdx from './typescript/slide*.mdx'
-
-import React from 'react'
-import ReactDOM from 'react-dom'
 
 if (process.env.NODE_ENV === 'development') {
   whyDidYouRender(React, {
@@ -21,9 +20,9 @@ ReactDOM.render(
   <MDXProvider components={components}>
     <div className="slides">
       {Object.entries(mdx).map(
-        ([key, MDX]: [string, { default: React.ComponentType }]) => (
+        ([key, Mdx]: [string, { default: React.ComponentType }]) => (
           <section key={key}>
-            <MDX.default></MDX.default>
+            <Mdx.default></Mdx.default>
           </section>
         ),
       )}
