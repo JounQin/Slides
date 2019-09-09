@@ -1071,6 +1071,11 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.3.1.tgz#17291c0759f33a88aa80f5d471a8a1863b0a9170"
   integrity sha512-YOlSyl/EfTRoO7Twzad6RYJlHcyW1WZo8gDRO+4uFTy6+AHMaqSCMAPJIJkmKwgi+IPojQUGuMzKJ47qxQ9BbA==
 
+"@mdx-js/util@^1.4.4":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-1.4.4.tgz#ed63c83d986731814b81fd4275196cfc3d79c9cf"
+  integrity sha512-/mczKmKul33/Um6WZ3UYKKXQJg6MuHg6/WkZzndC2z5Geclbai3COLrcono7KQ6rstu3kKRmzkQLJfUB+cu8Pg==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -3310,6 +3315,16 @@ eslint-mdx@^1.4.0:
     remark-mdx "^1.3.1"
     remark-parse "^7.0.1"
 
+eslint-mdx@^1.4.5:
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/eslint-mdx/-/eslint-mdx-1.4.5.tgz#5341ae8bf77b4afedcb4d2d4983dc0ed11bef4c0"
+  integrity sha512-+J2ODRnyNkxAzU7mLCLFPwF0JMALgSFFtbrpfB8i7t72vx7Lz3gFsPgugkd/ktWjB7Bi9qWeh1vNRs8JnNxTqQ==
+  dependencies:
+    espree "^6.1.1"
+    remark-mdx "^1.4.4"
+    remark-parse "^7.0.1"
+    unified "^8.3.2"
+
 eslint-module-utils@^2.4.0:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/eslint-module-utils/-/eslint-module-utils-2.4.1.tgz#7b4675875bf96b0dbf1b21977456e5bb1f5e018c"
@@ -3367,6 +3382,20 @@ eslint-plugin-mdx@^1.4.0:
     rebass "^4.0.5"
     remark-lint-file-extension "^1.0.3"
     remark-stringify "^7.0.2"
+
+eslint-plugin-mdx@^1.4.6:
+  version "1.4.6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-mdx/-/eslint-plugin-mdx-1.4.6.tgz#c68d5308faa267ddc32f593600c9ff950c86e4f5"
+  integrity sha512-pqeALniX92Fyxq+wIXsZ2Z+KCZIigEmWjR6huXvIHwDkaPIxryOg5fqsqYpQ4IGDrqrkRUJnnWQBaiWK7Jdzgg==
+  dependencies:
+    cosmiconfig "^5.2.1"
+    eslint-mdx "^1.4.5"
+    rebass "^4.0.5"
+    remark-mdx "^1.4.4"
+    remark-parse "^7.0.1"
+    remark-stringify "^7.0.3"
+    unified "^8.3.2"
+    vfile "^4.0.1"
 
 eslint-plugin-node@^9.1.0:
   version "9.1.0"
@@ -7717,6 +7746,20 @@ remark-mdx@^1.3.1:
     remark-parse "7.0.1"
     unified "8.3.2"
 
+remark-mdx@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/remark-mdx/-/remark-mdx-1.4.4.tgz#0e6d3c5ecbdfe4b133a85310fd19e76b1ee3ea82"
+  integrity sha512-yz/kvkczimzJ3AT1ZbDPBw2V2TQd9D+0RM30kUi2NMW1CElYcMey1DtmAb0V2xJzjHtAIdh6qi2+uXyBH7lBJw==
+  dependencies:
+    "@babel/core" "7.5.5"
+    "@babel/helper-plugin-utils" "7.0.0"
+    "@babel/plugin-proposal-object-rest-spread" "7.5.5"
+    "@babel/plugin-syntax-jsx" "7.2.0"
+    "@mdx-js/util" "^1.4.4"
+    is-alphabetical "1.0.3"
+    remark-parse "7.0.1"
+    unified "8.3.2"
+
 remark-message-control@^4.0.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/remark-message-control/-/remark-message-control-4.2.0.tgz#184c4a69ce6c4c707a5633fa35b0ce3dbf81f22c"
@@ -7831,6 +7874,26 @@ remark-stringify@^7.0.2:
   version "7.0.2"
   resolved "https://registry.yarnpkg.com/remark-stringify/-/remark-stringify-7.0.2.tgz#1b87716e3bf278ef5dd6c230e47c633d89b81d76"
   integrity sha512-+Fr2xUe+P9b4XwRBjtIQF6DuHtQEQAVsBv8Uv+Gz3d3gkFxwEIzKFjzHo13KgWkASn/MQIY1C9vmOTm0kwlGXw==
+  dependencies:
+    ccount "^1.0.0"
+    is-alphanumeric "^1.0.0"
+    is-decimal "^1.0.0"
+    is-whitespace-character "^1.0.0"
+    longest-streak "^2.0.1"
+    markdown-escapes "^1.0.0"
+    markdown-table "^1.1.0"
+    mdast-util-compact "^1.0.0"
+    parse-entities "^1.0.2"
+    repeat-string "^1.5.4"
+    state-toggle "^1.0.0"
+    stringify-entities "^2.0.0"
+    unherit "^1.0.4"
+    xtend "^4.0.1"
+
+remark-stringify@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/remark-stringify/-/remark-stringify-7.0.3.tgz#9221e9770b0b395af83a0d5881a44b6fcb9d0a2a"
+  integrity sha512-+jgmjNjm2kR7y2Ns1BATXRlFr+iQ7sDcpSgytfU77nkw7UCd5yJNArSxB3MU3Uul7HuyYNTCjetoGfy8xLia1A==
   dependencies:
     ccount "^1.0.0"
     is-alphanumeric "^1.0.0"
@@ -9092,7 +9155,7 @@ unified-message-control@^1.0.0:
     unist-util-visit "^1.0.0"
     vfile-location "^2.0.0"
 
-unified@8.3.2:
+unified@8.3.2, unified@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/unified/-/unified-8.3.2.tgz#aed69d0e577d6ef27268431c63a10faef60e63ab"
   integrity sha512-NDtUAXcd4c+mKppCbsZHzmhkKEQuhveZNBrFYmNgMIMk2K9bc8hmG3mLEGVtRmSNodobwyMePAnvIGVWZfPdzQ==
@@ -9352,7 +9415,7 @@ vfile-message@^2.0.0:
     "@types/unist" "^2.0.2"
     unist-util-stringify-position "^2.0.0"
 
-vfile@^4.0.0:
+vfile@^4.0.0, vfile@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/vfile/-/vfile-4.0.1.tgz#fc3d43a1c71916034216bf65926d5ee3c64ed60c"
   integrity sha512-lRHFCuC4SQBFr7Uq91oJDJxlnftoTLQ7eKIpMdubhYcVMho4781a8MWXLy3qZrZ0/STD1kRiKc0cQOHm4OkPeA==
