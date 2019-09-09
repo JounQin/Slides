@@ -42,10 +42,10 @@
   resolved "https://registry.yarnpkg.com/@1stg/prettier-config/-/prettier-config-0.1.0.tgz#abcc5e4ee92ced16f4d32da659a75adfdbd27a60"
   integrity sha512-bL4ADvk2k0rtv4ye3uI1ImfKbe3op+M/5Ff8FIsPvQroTWfNK8AhS4b7nnUl/U8yQpwkOA6aUNRSJtos9S4ABw==
 
-"@1stg/prettier-config@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@1stg/prettier-config/-/prettier-config-0.1.1.tgz#15a7ca7e27d9545e8adf006c8157abdaba3cce8e"
-  integrity sha512-JoHDYcwqkx3LlxH3vYWBRAPupYSdX+5hQsWFgNaLeDWVdXVr64urS/MrlcxLpWiQXFXZgtQrSqoSSGkX5kiTkA==
+"@1stg/prettier-config@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@1stg/prettier-config/-/prettier-config-0.2.0.tgz#853c1142834f31d9287cd9e30f2b91d46e4961d6"
+  integrity sha512-wL0qdfsJyHQvOO0vG50StqTSIOX9kauhu6NbLHMgAXE+s3rQ4/N0slwAwYCrqHSwYRVqpeqN8EblYF6UIZiwZQ==
 
 "@1stg/tsconfig@^0.1.0":
   version "0.1.0"
