@@ -26,7 +26,7 @@
     "@1stg/eslint-config": "^0.2.2",
     "@1stg/husky-config": "^0.3.0",
     "@1stg/lint-staged": "^0.7.4",
-    "@1stg/prettier-config": "^0.2.0",
+    "@1stg/prettier-config": "^0.3.4",
     "@1stg/tsconfig": "^0.1.0",
     "@commitlint/config-conventional": "^8.2.0",
     "@mdx-js/parcel-plugin-mdx": "^1.3.1",
