@@ -1436,10 +1436,10 @@
     lodash.unescape "4.0.1"
     semver "^6.2.0"
 
-"@welldone-software/why-did-you-render@^3.3.6":
-  version "3.3.6"
-  resolved "https://registry.yarnpkg.com/@welldone-software/why-did-you-render/-/why-did-you-render-3.3.6.tgz#d15cc1b1b15fbe9b29908d02d7c5bad281be1b1e"
-  integrity sha512-giHh4vPq58CKdvtO1M6cAa0cWWVpFSkXpQPSeVs3O/fm054gVwFKL0ycCcFu/CgnKpip9dfur0i1X7lOH0Gq/Q==
+"@welldone-software/why-did-you-render@^3.3.8":
+  version "3.3.8"
+  resolved "https://registry.yarnpkg.com/@welldone-software/why-did-you-render/-/why-did-you-render-3.3.8.tgz#a8b69e6d64e36bab676c03ca4630032bdf6ea5b1"
+  integrity sha512-DtmXat8vPJuQlSG9BD0dW9baViZUzFtHMMTHAGnQpRosq7U0kOkEoPXoLY/mRKEfI3SJkxX9R/dwIVh2CQ+rKw==
   dependencies:
     lodash "^4"
 
