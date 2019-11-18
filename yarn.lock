@@ -66,6 +66,11 @@
   resolved "https://registry.yarnpkg.com/@1stg/tsconfig/-/tsconfig-0.1.0.tgz#5d10e823a407f727aaec35ac6bf011d14f64e51b"
   integrity sha512-kYhEnzBIRlTSMR6yqbpDY1vEN5gGMQKS2uxNPEEZe5bRJA4dUDjYHyCvzlyFRhfu2F/ow5Ny0a7PnXIvnUttLg==
 
+"@1stg/tsconfig@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@1stg/tsconfig/-/tsconfig-0.1.1.tgz#b7cfe5b3889d700f660087cf8eea20cfa6543068"
+  integrity sha512-ZBTl/pr0h9MGZppAMIEN8BjJdIrYv3GSjcLgHRSn48uC5otyT61BkZ8BwYQf+tIY5jOFbI0i0Y2wgHxkxXZphQ==
+
 "@babel/code-frame@7.0.0", "@babel/code-frame@^7.0.0 <7.4.0":
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.0.0.tgz#06e2ab19bdb535385559aabb5ba59729482800f8"
