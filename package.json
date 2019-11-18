@@ -23,7 +23,7 @@
     "rxjs": "^6.5.2"
   },
   "devDependencies": {
-    "@1stg/eslint-config": "^0.2.2",
+    "@1stg/eslint-config": "^0.15.2",
     "@1stg/husky-config": "^0.4.0",
     "@1stg/lint-staged": "^0.8.11",
     "@1stg/prettier-config": "^0.6.2",
