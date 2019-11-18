@@ -976,6 +976,13 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@^7.6.3":
+  version "7.7.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.2.tgz#111a78002a5c25fc8e3361bedc9529c696b85a6a"
+  integrity sha512-JONRbXbTXc9WQE2mAZd1p0Z3DZ/6vaQIkgYMSTP3KjRCyd7rCZCcfhCyX+YjwcKxcZ82UrxbRD358bpExNgrjw==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/template@^7.0.0 <7.4.0":
   version "7.2.2"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.2.2.tgz#005b3fdf0ed96e88041330379e0da9a708eb2907"
@@ -1653,6 +1660,11 @@
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==
+
+"@types/parse-json@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
+  integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
 "@types/prop-types@*":
   version "15.7.1"
@@ -2922,6 +2934,17 @@ cosmiconfig@^5.0.0, cosmiconfig@^5.2.0, cosmiconfig@^5.2.1:
     js-yaml "^3.13.1"
     parse-json "^4.0.0"
 
+cosmiconfig@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-6.0.0.tgz#da4fee853c52f6b1e6935f41c1a2fc50bd4a9982"
+  integrity sha512-xb3ZL6+L8b9JLLCx3ZdoZy4+2ECphCMo2PwqgP1tlfVq6M6YReyzBJtvWWtbDSpNr9hn96pkCiZqUcFEc+54Qg==
+  dependencies:
+    "@types/parse-json" "^4.0.0"
+    import-fresh "^3.1.0"
+    parse-json "^5.0.0"
+    path-type "^4.0.0"
+    yaml "^1.7.2"
+
 create-ecdh@^4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/create-ecdh/-/create-ecdh-4.0.3.tgz#c9111b6f33045c4697f144787f9254cdc77c45ff"
@@ -3744,16 +3767,16 @@ eslint-mdx@^1.4.0:
     remark-mdx "^1.3.1"
     remark-parse "^7.0.1"
 
-eslint-mdx@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/eslint-mdx/-/eslint-mdx-1.6.2.tgz#4e2b83f41af3a29ae83f802dd16f77566291785f"
-  integrity sha512-O+r3u7/Vz9laOp6tYGVvRBISgMkZTzJzVWJwAJmZ4ZFfF+ICV1WMxqphaxE8OfesnEYMwvS+tBXRkcLfuqa9mw==
+eslint-mdx@^1.6.3:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/eslint-mdx/-/eslint-mdx-1.6.3.tgz#f70a94d52c39aca0de93ee03fa1b09d744ff7056"
+  integrity sha512-KGGZmOMufSdfXQWdEdmVr+V4g58DnROY7SKtBSmndhT/2vVjg/9hZSasyB/Ov32SqsAY6QJGDAR87qUxersV9A==
   dependencies:
     espree "^6.1.2"
     remark-mdx "^1.5.1"
-    remark-parse "^7.0.1"
+    remark-parse "^7.0.2"
     tslib "^1.10.0"
-    unified "^8.4.1"
+    unified "^8.4.2"
 
 eslint-module-utils@^2.4.0:
   version "2.4.1"
@@ -3813,20 +3836,20 @@ eslint-plugin-mdx@^1.4.0:
     remark-lint-file-extension "^1.0.3"
     remark-stringify "^7.0.2"
 
-eslint-plugin-mdx@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-mdx/-/eslint-plugin-mdx-1.6.2.tgz#5d157e494f5592ef7dde4dc77b88c65ec7120ace"
-  integrity sha512-dEu7BuujCQ5Hho121aJx2T4FYUKWY4Op1EV5xi4WXEMziPDlGbu9I36oN0Ta154HRfiflfgaUdM1qoQn8gQJBA==
+eslint-plugin-mdx@^1.6.3:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-mdx/-/eslint-plugin-mdx-1.6.3.tgz#fdecf82bfcae0a3bf1eaa41b606e0228ad8f0efd"
+  integrity sha512-ohCRzsEyoQz4XLM2DEfCd3yJos94wdfL10NpZUxO00YEoAD728+LY5pjSDkGg+5jmUVzv13RBPHtSZ8aAC3gLQ==
   dependencies:
-    cosmiconfig "^5.2.1"
-    eslint-mdx "^1.6.2"
+    cosmiconfig "^6.0.0"
+    eslint-mdx "^1.6.3"
     eslint-plugin-react ">=7.0.0"
     remark-mdx "^1.5.1"
-    remark-parse "^7.0.1"
-    remark-stringify "^7.0.3"
+    remark-parse "^7.0.2"
+    remark-stringify "^7.0.4"
     tslib "^1.10.0"
-    unified "^8.4.1"
-    vfile "^4.0.1"
+    unified "^8.4.2"
+    vfile "^4.0.2"
   optionalDependencies:
     rebass "^4.0.7"
 
@@ -4905,6 +4928,14 @@ import-fresh@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-3.1.0.tgz#6d33fa1dcef6df930fae003446f33415af905118"
   integrity sha512-PpuksHKGt8rXfWEr9m9EHIpgyyaltBy8+eF6GJM0QCAxMgxCfucMF3mjecK2QsJr0amJW7gTqh5/wht0z2UhEQ==
+  dependencies:
+    parent-module "^1.0.0"
+    resolve-from "^4.0.0"
+
+import-fresh@^3.1.0:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-3.2.1.tgz#633ff618506e793af5ac91bf48b72677e15cbe66"
+  integrity sha512-6e1q1cnWP2RXD9/keSkxHScg508CdXqXWgWBaETNhyuBFz+kUZlKboh+ISK+bU++DmbHimVBrOz/zzPe0sZ3sQ==
   dependencies:
     parent-module "^1.0.0"
     resolve-from "^4.0.0"
@@ -8404,6 +8435,27 @@ remark-parse@7.0.1, remark-parse@^7.0.1:
     vfile-location "^2.0.0"
     xtend "^4.0.1"
 
+remark-parse@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/remark-parse/-/remark-parse-7.0.2.tgz#41e7170d9c1d96c3d32cf1109600a9ed50dba7cf"
+  integrity sha512-9+my0lQS80IQkYXsMA8Sg6m9QfXYJBnXjWYN5U+kFc5/n69t+XZVXU/ZBYr3cYH8FheEGf1v87rkFDhJ8bVgMA==
+  dependencies:
+    collapse-white-space "^1.0.2"
+    is-alphabetical "^1.0.0"
+    is-decimal "^1.0.0"
+    is-whitespace-character "^1.0.0"
+    is-word-character "^1.0.0"
+    markdown-escapes "^1.0.0"
+    parse-entities "^1.1.0"
+    repeat-string "^1.5.4"
+    state-toggle "^1.0.0"
+    trim "0.0.1"
+    trim-trailing-lines "^1.0.0"
+    unherit "^1.0.4"
+    unist-util-remove-position "^1.0.0"
+    vfile-location "^2.0.0"
+    xtend "^4.0.1"
+
 remark-preset-lint-markdown-style-guide@^2.1.3:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/remark-preset-lint-markdown-style-guide/-/remark-preset-lint-markdown-style-guide-2.1.3.tgz#2d2e6a162cc18976a2be93f4ebd45835f2ff6c14"
@@ -8504,10 +8556,10 @@ remark-stringify@^7.0.2:
     unherit "^1.0.4"
     xtend "^4.0.1"
 
-remark-stringify@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/remark-stringify/-/remark-stringify-7.0.3.tgz#9221e9770b0b395af83a0d5881a44b6fcb9d0a2a"
-  integrity sha512-+jgmjNjm2kR7y2Ns1BATXRlFr+iQ7sDcpSgytfU77nkw7UCd5yJNArSxB3MU3Uul7HuyYNTCjetoGfy8xLia1A==
+remark-stringify@^7.0.4:
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/remark-stringify/-/remark-stringify-7.0.4.tgz#3de1e3f93853288d3407da1cd44f2212321dd548"
+  integrity sha512-qck+8NeA1D0utk1ttKcWAoHRrJxERYQzkHDyn+pF5Z4whX1ug98uCNPPSeFgLSaNERRxnD6oxIug6DzZQth6Pg==
   dependencies:
     ccount "^1.0.0"
     is-alphanumeric "^1.0.0"
@@ -9797,10 +9849,10 @@ unified@8.3.2:
     trough "^1.0.0"
     vfile "^4.0.0"
 
-unified@^8.4.1:
-  version "8.4.1"
-  resolved "https://registry.yarnpkg.com/unified/-/unified-8.4.1.tgz#99bd0393f58a139eaa51832cfbcc0e7f6573a1e1"
-  integrity sha512-YPj/uIIZSO7mMIZQj/5Z3hDl4lshWYRQGs5TgUCjHTVdklUWH+O94mK5Cy77SEcmEUwGhnUcudMuH/zIwporqw==
+unified@^8.4.2:
+  version "8.4.2"
+  resolved "https://registry.yarnpkg.com/unified/-/unified-8.4.2.tgz#13ad58b4a437faa2751a4a4c6a16f680c500fff1"
+  integrity sha512-JCrmN13jI4+h9UAyKEoGcDZV+i1E7BLFuG7OsaDvTXI5P0qhHX+vZO/kOhz9jn8HGENDKbwSeB0nVOg4gVStGA==
   dependencies:
     bail "^1.0.0"
     extend "^3.0.0"
@@ -10057,10 +10109,21 @@ vfile-message@^2.0.0:
     "@types/unist" "^2.0.2"
     unist-util-stringify-position "^2.0.0"
 
-vfile@^4.0.0, vfile@^4.0.1:
+vfile@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/vfile/-/vfile-4.0.1.tgz#fc3d43a1c71916034216bf65926d5ee3c64ed60c"
   integrity sha512-lRHFCuC4SQBFr7Uq91oJDJxlnftoTLQ7eKIpMdubhYcVMho4781a8MWXLy3qZrZ0/STD1kRiKc0cQOHm4OkPeA==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    is-buffer "^2.0.0"
+    replace-ext "1.0.0"
+    unist-util-stringify-position "^2.0.0"
+    vfile-message "^2.0.0"
+
+vfile@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/vfile/-/vfile-4.0.2.tgz#71af004d4a710b0e6be99c894655bc56126d5d56"
+  integrity sha512-yhoTU5cDMSsaeaMfJ5g0bUKYkYmZhAh9fn9TZicxqn+Cw4Z439il2v3oT9S0yjlpqlI74aFOQCt3nOV+pxzlkw==
   dependencies:
     "@types/unist" "^2.0.0"
     is-buffer "^2.0.0"
@@ -10257,6 +10320,13 @@ yallist@^3.0.0, yallist@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-3.0.3.tgz#b4b049e314be545e3ce802236d6cd22cd91c3de9"
   integrity sha512-S+Zk8DEWE6oKpV+vI3qWkaK+jSbIK86pCwe2IF/xwIpQ8jEuxpw9NyaGjmp9+BoJv5FV2piqCDcoCtStppiq2A==
+
+yaml@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.7.2.tgz#f26aabf738590ab61efaca502358e48dc9f348b2"
+  integrity sha512-qXROVp90sb83XtAoqE8bP9RwAkTTZbugRUTm5YeFCBfNRPEp2YzTeqWiz7m5OORHzEvrA/qcGS8hp/E+MMROYw==
+  dependencies:
+    "@babel/runtime" "^7.6.3"
 
 yargs-parser@^10.0.0:
   version "10.1.0"
